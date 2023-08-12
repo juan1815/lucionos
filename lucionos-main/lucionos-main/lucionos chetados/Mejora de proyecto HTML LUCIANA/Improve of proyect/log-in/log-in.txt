@@ -1,0 +1,3 @@
+things to do
+
+1. add the dropdown of rol to the box of log-in.

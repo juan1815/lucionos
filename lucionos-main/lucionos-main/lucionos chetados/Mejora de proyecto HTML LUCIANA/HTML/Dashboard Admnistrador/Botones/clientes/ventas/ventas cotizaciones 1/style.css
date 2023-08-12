@@ -1,0 +1,145 @@
+:root {
+    --blue: #16D8F3;
+    --white: #fff;
+    --gray: #f5f5f5;
+    --black1: #222;
+    --black2:#77B912;
+    --orange: #FFAE00;
+    --red: #FF0000;
+    --Gray: #7C7777;
+}
+body > table {
+    width: 80%;
+}
+ 
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+.details .recentDown td, th {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+.btn-1 {
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    border-radius: 8px;
+    color: #ffff;
+    display: inline-block;
+    font-size: 18px;
+    padding: 25px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    margin-right: 30px;
+    }
+    
+/* ordenes de detalles */
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    /* margin-top: 10px; */
+}
+
+/* box under */
+.details .recentDown {
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+details .cardDown {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardDown h2 {
+    margin: 0 500px;
+    font-weight: 600;
+    color: var(--black1);
+}
+.details .recentDown table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+}
+.details .recentDown table tbody tr:hover {
+    background-color: #2d8b98dd;
+    color: var(--white);
+}
+.details .recentDown table tbody tr td {
+    padding: 10px;
+    border-radius: 25px;
+}
+.details .recentDown table tbody tr:last-child {
+    text-align: left;
+}
+.details .recentDown table tbody tr:nth-child(2) {
+    text-align: left;
+}
+.details .recentDown table tbody tr:nth-child(3) {
+    text-align: left;
+}

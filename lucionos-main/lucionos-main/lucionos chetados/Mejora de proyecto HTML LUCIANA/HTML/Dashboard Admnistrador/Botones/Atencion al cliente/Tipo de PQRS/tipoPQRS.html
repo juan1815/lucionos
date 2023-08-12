@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        Tabla de cotizacion
+    </title>
+    <link rel="stylesheet" href="../Tipo de PQRS/Style.css">
+    <style>
+        .contenedor-1 {
+        display: flex;
+        justify-content: center;
+        padding: 35px;
+        }
+        .contenedor {
+          margin-right: 20px;
+        }
+        body {
+            background-color: rgba(165, 210, 233, 0.785);
+        }
+        </style>
+</head>
+
+<body>
+    <div class="details">
+        <div class="recentOrders">
+            <div class="cardHeader">
+                <h2>Ordenes Recientes</h2>
+                <a href="../../../../../errores/pagina error 404/error2.html" class="btn">Ver todo</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Categoria de peticion</td>
+                        <td>Descripcion</td>
+                        <td>Fecha de peticion</td>
+                        <td>ID de PQRS</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rodolfo hernandez</td>
+                        <td>Reclamo</td>
+                        <td>Mi pedido ha llegado en malas condiciones.</td>
+                        <td>11/01/2023</td>
+                        <td><span class="status return">G-001</span></td>
+                    </tr>
+                    <tr>
+                        <td>Stella Ramirez</td>
+                        <td>Sugerencia</td>
+                        <td>Quisiera realizar una sugerencia con las personas que entregan los pedidos.</td>
+                        <td>11/09/2023</td>
+                        <td><span class="status pending">G-002</span></td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Bogoya</td>
+                        <td>Reconocimiento</td>
+                        <td>Excelente negocio, me encanta su interes.</td>
+                        <td>11/12/2023</td>
+                        <td><span class="status delivered">G-003</span></td>
+                    </tr>
+                    <tr>
+                        <td>Segio rosa melindo</td>
+                        <td>Reclamo</td>
+                        <td>terrible servicio, no fue lo que solicite</td>
+                        <td>11/15/2023</td>
+                        <td><span class="status return">G-004</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<!-- presentacion box -->
+<div class="details">
+<div class="recentDown">
+        <div class="cardDown">
+            <h2>Añadir PQRS</h2>
+            </div>
+         
+<!-- Table to add people -->
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>ID de PQRS</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Nombre completo del cliente</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Categoría</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Descripción</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Subir">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>ID de PQRS</th>
+                            <th>Nombre completo del cliente</th>
+                            <th>Categoría</th>
+                            <th>Descripción</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+    <div class="contenedor-1">
+        <a href="../atencion.html" class="btn-1">Regresar
+          
+        </a></div>
+    <script src="../Tipo de PQRS/Script.js"></script>
+</body>
+
+</html>

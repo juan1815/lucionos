@@ -1,0 +1,4 @@
+Things to do
+
+
+1. add option dropdpwn the section "categoria". maybe add it the section "descripcion" too.
